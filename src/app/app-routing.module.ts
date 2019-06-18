@@ -9,6 +9,8 @@ import { PesquisaComponent } from './pesquisa/pesquisa.component';
 import { CadastrarArtistaComponent } from './cadastrar-artista/cadastrar-artista.component';
 import { ArtistaListaComponent } from './artista-lista/artista-lista.component';
 import { EditarArtistaComponent } from './editar-artista/editar-artista.component';
+import { GeneroListComponent } from './genero-list/genero-list.component';
+import { GeneroCadastrarComponent } from './genero-cadastrar/genero-cadastrar.component';
 
 const routes: Routes = [
   { path: 'artistas/cadastrar', component: CadastrarArtistaComponent },
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'artistas/:id', component: ArtistaComponent },
   { path: 'musicas', component: MusicasComponent },
   { path: 'musicas/:id', component: MusicaComponent },
+  { path: 'generos/cadastrar', component: GeneroCadastrarComponent},
+  { path: 'generos/listar', component: GeneroListComponent},
   { path: 'generos/:id', component: GeneroComponent },
   { path: 'pesquisa', component: PesquisaComponent },
   { path: '', component: HomeComponent }

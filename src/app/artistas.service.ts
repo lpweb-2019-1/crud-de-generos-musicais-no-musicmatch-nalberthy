@@ -22,7 +22,7 @@ export class ArtistasService extends DadosBaseService {
         catchError(this.handleError<any>('lista', []))
       );
   }
-
+ 
   /**
    * Este método realiza uma requisição GET à API com o objetivo
    * de obter as informações de um artista, indicado pelo parâmetro

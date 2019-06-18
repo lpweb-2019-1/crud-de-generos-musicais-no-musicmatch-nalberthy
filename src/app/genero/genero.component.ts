@@ -13,6 +13,7 @@ export class GeneroComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private generos$: GenerosService) { }
 
+  
   ngOnInit() {
     this.route.paramMap.pipe(
       map(params => params.get('id')),
@@ -22,7 +23,7 @@ export class GeneroComponent implements OnInit {
     ).subscribe(
       genero => this.genero = genero
     );
-
+  
   }
 
 }

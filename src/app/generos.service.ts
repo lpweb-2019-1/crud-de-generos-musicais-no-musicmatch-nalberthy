@@ -36,5 +36,9 @@ export class GenerosService extends DadosBaseService {
     return this.http.get(this.URL.concat(`${id}/`));
   }
 
+  cadastrar(nome){
+    const data = {nome }
+    return this.http.post(this.URL,data)
+  }
 
 }
